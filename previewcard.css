@@ -1,0 +1,92 @@
+.card {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    width: 460px;  
+  }
+ 
+ .image {
+    flex: 1;
+  }
+
+  .w-full {
+    flex: 1;
+    width: 460px;
+    height: auto;
+  }
+
+  .py-4 {
+    flex: 1;
+    height: auto;
+    padding: 0px;
+    margin-left: 24px;
+    margin-top: 16px;
+  }
+
+  .mb-2 {
+    font-family: Fraunces;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-size: 27px;
+    line-height: 1;
+    margin-bottom: 10px;   
+  }
+
+  p {
+    font-size: 13px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+    margin-top: 0px; 
+    margin-bottom: 10px; 
+  }
+
+  .price {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+.original-price {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+    padding-left: 16px;
+    text-align: center;
+}
+
+.add-to-cart-button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .add-to-cart-button img {
+    width: 0.8rem; 
+    margin-right: 0.5rem;
+  }
+
+  @media (max-width: 375px) {
+    .card {
+      flex-direction: column;
+
+    }
+
+    .image,
+    .py-4 {
+      max-width: 100%;
+    }
+  }
